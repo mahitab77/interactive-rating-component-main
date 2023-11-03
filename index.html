@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>interactive-rating-component-main</title>
+        <link rel="stylesheet" href="./index.css">
+    
+    </head>
+
+    <body>       
+        <parent id="wrapper">
+            <div id="rate">
+                <div id="star">
+                    <img id="start" src="./images/icon-star.svg" alt="">
+                </div>
+                <div id="text">
+                    <h3 id="ask" >How did we do?</h3>
+                    <p id="please">Please let us know how we did with your support request. All feedback is appreciated
+                        to help us improve our offering!</p>
+                </div>
+                <div id="ratesicons">
+                    <div id="options">                  
+                        <button class="opti" type="button">1</button>
+                        <button class="opti" type="button">2</button>
+                        <button class="opti" type="button">3</button>
+                        <button class="opti" type="button">4</button>
+                        <button class="opti" type="button">5</button>
+                    </div>
+                </div>
+                <button id="submitbutton" type="submit">SUBMIT</button> 
+            </div>
+            <div id="thank">
+                <img id="vector" src="./images/illustration-thank-you.svg" alt="">
+                <p id="outtext"></p>
+                <div id="textthank">
+                    <h3 id="hthank">Thank You!</h3>
+                    <p id="pthank">We appreciate you taking the time to give a rating. If you ever need more support,
+                        don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+        </parent>
+        <div id="error-message">
+            <p>Please Choose a Rating</p>
+            <button id="close-error">Close</button>
+        </div>
+        <script src="index.js"></script>   
+    </body>
+</html>

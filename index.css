@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width:1440px;
+    height:730px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: black;
+}
+parent{
+    width:400px;
+    height:400px;
+    font-family: 'Overpass', sans-serif;
+    border-radius: 20px;
+    background-color: hsl(216, 12%, 8%);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+#rate{
+    width:90%;
+    height:90%;
+    display:flex;   
+    flex-direction:column; 
+    justify-content:space-between;
+    align-items: left; 
+}
+#star{
+    margin-top: 0px;
+    width:10%;
+    height:10%;
+    border-radius: 50%;
+    background-color:hsl(213, 19%, 18%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}                
+#text{
+    width:87%;
+    height:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    row-gap: 0px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color:white;
+}
+#ask{ 
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}          
+#please{ 
+    font-size: 14px;
+    font-weight: 400;  
+    color:hsl(217, 12%, 63%);
+}     
+#ratesicons{
+    margin-left: 0px;
+    width:100%;
+    height:15%;
+}
+#options{
+    margin-left: 0px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    column-gap: 20px;
+}
+.opti {  
+    margin-left: 0px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;  
+    justify-content: center;
+    background-color:hsl(213, 19%, 18%);
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    color:hsl(217, 12%, 63%);
+    font-size: 14px;
+    font-weight: 400;
+    border:0px;
+}  
+.opti:hover{
+    background-color:#f97618; 
+}    
+#submitbutton{
+    width:100%;
+    height:12%;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: #f97618;
+    color:white;   
+    margin-bottom: 30px;
+}
+#submitbutton:hover{
+    color: #f97618;
+    background-color:white;
+}         
+#thank{
+    width:95%;
+    height:95%;
+    display:none;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
+}
+#vector{
+    margin: 30px;
+}
+#outtext{
+    border:1px hsl(213, 19%, 18%);
+    border-radius: 10px;
+    width:220px;
+    height:28px;
+    color:#f97618;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#textthank{
+    width:76%;  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0px;
+    margin-top: -30px;
+    margin-bottom: 0px;
+    color:white;
+}
+#hthank{ 
+    font-size: 20px;
+    font-weight: 700px;
+    margin-top: 35px;
+}          
+#pthank{ 
+    text-align: center;
+    font-size: 15px;  
+    font-weight: 400;
+}     
+#error-message{
+    display:none;
+    position: absolute;
+    top:300px;
+    left:530px;
+    text-align: center;
+    width:400px;
+    height:100px;
+    border-radius: 5px;
+    background-color: white;
+    color:black;
+    z-index: 2;
+}
+#close-error{
+    border-radius: 5px;
+    background-color: grey;
+    color:white;
+    width:70px;
+    height:30px;
+    border:0px;
+ 
+}
+/*///////////////////////////////////////////////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 375px) {
+        
+body{
+    width:375px;
+    height:100%;
+}
+parent{
+    width:320px;
+    height:350px;
+    border-radius: 15px;
+    margin-left: 0px;
+}
+#text{
+    width:93%;
+    height:20%;
+    margin-top: 30px;
+}  
+#options{
+    column-gap:25px;
+}
+.opti {
+    width:35px;
+    height:35px;
+    font-size: 13px;
+}  
+.opti:hover{
+    background-color:hsl(213, 19%, 18%);
+}    
+#submitbutton{
+    margin-bottom: 20px;
+}
+#submitbutton:hover{
+    background-color: #f97618;
+    color:white;   
+}
+#textthank{
+    width:90%;  
+    height:30%;
+    margin-top: 0px;
+    padding: 0px;
+}
+#hthank{ 
+    margin-top: 10px;
+    margin-bottom: 5px; 
+}          
+#pthank{ 
+    font-size: 14px;  
+    margin-bottom: 20px;
+    font-weight: 300px;
+}     
+}
